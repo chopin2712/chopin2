@@ -29,7 +29,7 @@ Dynamic websites are like WordPress, Google, Ghost, Medium, etc. There has
 direct contact with the user, also th" />
     <meta property="og:url" content="http://localhost:2368/how-to-publish-a-local-website/" />
     <meta property="article:published_time" content="2019-11-09T13:00:18.000Z" />
-    <meta property="article:modified_time" content="2019-11-11T11:14:26.000Z" />
+    <meta property="article:modified_time" content="2019-11-26T19:38:47.000Z" />
     <meta property="article:tag" content="Tutorial" />
     
     <meta name="twitter:card" content="summary" />
@@ -76,7 +76,7 @@ direct contact with the user, also th" />
     "headline": "How to publish a local website",
     "url": "http://localhost:2368/how-to-publish-a-local-website/",
     "datePublished": "2019-11-09T13:00:18.000Z",
-    "dateModified": "2019-11-11T11:14:26.000Z",
+    "dateModified": "2019-11-26T19:38:47.000Z",
     "keywords": "Tutorial",
     "description": "In this post I have been tried to publish my blog, failed. So I decided to\nreturn to basics. The static website. This blog doesn&#x27;t have something very\ndynamic excepted writing. All other integrations are tier-party so not dynamic\nfrom this website.\n\nI&#x27;ve already done that with a WordPress website.\n\nWhat does static means?\nThere are two types of websites, dynamics one and statics one.\n\nDynamic websites are like WordPress, Google, Ghost, Medium, etc. There has\ndirect contact with the user, also th",
     "mainEntityOfPage": {
@@ -129,7 +129,8 @@ git commit -m website
 git config credential.helper store
 git push -u origin master
 </code></pre><p>6. Save the file and allow executing file:</p><pre><code class="language-shell">sudo chmod +x /usr/bin/ghost-up
-</code></pre><p>7. Run the command <code>ghost-up</code> to publish your content</p><h2 id="configure-the-raspberry-pi">Configure the Raspberry PI</h2><p>If you decided to use a Rpi  you can follow this guide to  sync the host with the Rpi.</p><ol><li>First, install Nginx on it <em>sudo apt install nginx -y</em></li><li>Then go into the Nginx folder <em>cd /var/www/html</em></li><li>Then sync the repo by running the following commands:‌‌</li></ol><pre><code class="language-shell">watch -n 3600 sudo rm -r /var/www/html/* &amp;&amp; sudo git clone https://HOST/USER/REPO /var/www/html</code></pre><p>4. Configure your modem ports to allow the port 80 to work</p><p>5. Configure a DDNS like Noip to be linked to your public IP address</p><h2 id="use-it">Use it</h2><p>So now your script has been made you just need to make changes on your local install and then running ghost-up to be published. In maximum 1 hour the change will be made on your Rpi, and in max 5 minutes for the GitHub Pages.</p><h2 id="conclusion">Conclusion</h2><p>Congratulation, you have a fast, secure static website who can work on any device and cannot be hacked excepted the git repo. </p><p>So you just need to run one command to publish all changes! And you've also learned how to configure a Rpi. </p>
+</code></pre><p>7. Run the command <code>ghost-up</code> to publish your content</p><h2 id="configure-the-raspberry-pi">Configure the Raspberry PI</h2><p>If you decided to use a Rpi  you can follow this guide to  sync the host with the Rpi.</p><ol><li>First, install Nginx on it <em>sudo apt install nginx -y</em></li><li>Then go into the Nginx folder <em>cd /var/www/html</em></li><li>Then sync the repo by running the following commands:‌‌</li></ol><pre><code class="language-shell">watch -n 3600 sudo rm -r /var/www/html/* &amp;&amp; sudo git clone https://HOST/USER/REPO /var/www/html</code></pre><p>4. Configure your modem ports to allow the port 80 to work</p><p>5. Configure a DDNS like Noip to be linked to your public IP address</p><h2 id="use-it">Use it</h2><p>So now your script has been made you just need to make changes on your local install and then running ghost-up to be published. In maximum 1 hour the change will be made on your Rpi, and in max 5 minutes for the GitHub Pages.</p><h2 id="conclusion">Conclusion</h2><p>Congratulation, you have a fast, secure static website who can work on any device and cannot be hacked excepted the git repo. </p><p>So you just need to run one command to publish all changes! And you've also learned how to configure a Rpi. </p><div id="commento"></div>
+
 
             </section>
 
