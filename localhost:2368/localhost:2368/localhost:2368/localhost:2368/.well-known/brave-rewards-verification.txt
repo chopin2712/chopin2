@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: chopin2712.github.io
+Token: 5a1e65a9a00e567dd01950861253ab295f4f48656e267cb712e858ac4b02a72a
